@@ -7,6 +7,9 @@ h1{
     color:black;
     font-family: cursive;
 }
+#yourPassword{
+    letter-spacing: 3px;
+}
 section{
     padding-top: 20px;
     padding-bottom: 20px;
