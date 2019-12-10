@@ -1,4 +1,4 @@
-var symbolsAll = "abcdefghijklmnopqrstuvwxyz123456789!@#$%&^*()[]{}.,?/\|";
+var symbolsAll = "abcdefghijklmnopqrstuvwxyzABCDWFGHIJKLMNOPQRSTUVWXYZ123456789!@#$%&^*()[]{}.,?/\|";
 var symbolsCap = "ABCDWFGHIJKLMNOPQRSTUVWXYZ";
     function generatePassword() {
         var finishedPassword = "";
@@ -21,4 +21,7 @@ var symbolsCap = "ABCDWFGHIJKLMNOPQRSTUVWXYZ";
                     document.getElementById("yourPassword").style.fontSize = "40px";
                     console.log(finishedPassword);
         }
-}
+    }
+    function copyClip() {
+        
+    }  
