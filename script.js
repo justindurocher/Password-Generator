@@ -23,5 +23,5 @@ var symbolsCap = "ABCDWFGHIJKLMNOPQRSTUVWXYZ";
         }
     }
     function copyClip() {
-        
+        for
     }  
