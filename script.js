@@ -14,7 +14,8 @@ var symbolsCap = "ABCDWFGHIJKLMNOPQRSTUVWXYZ";
                 finishedPassword = finishedPassword + symbolsAll.charAt(Math.floor(Math.random() * Math.floor(symbolsAll.length - 1)));
                 console.log(finishedPassword);
             }
-        document.getElementById("yourPassword").innerHTML = finishedPassword;
+            document.getElementById("yourPassword").innerHTML = finishedPassword;
+            document.getElementById("yourPassword").style.fontSize = "40px";
         } else {
             finishedPassword = finishedPassword + symbolsCap.charAt(Math.floor(Math.random() * Math.floor(symbolsCap.length-1)));
             document.getElementById("yourPassword").innerHTML = finishedPassword;
