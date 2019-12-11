@@ -40,4 +40,3 @@ var copyToClip = document.getElementById("copyPass");
         document.body.removeChild(clipBoard);
     }  
 generatePassButton.addEventListener("click",generatePassword);
-    
