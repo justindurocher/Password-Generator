@@ -1,5 +1,8 @@
 var symbolsAll = "abcdefghijklmnopqrstuvwxyzABCDWFGHIJKLMNOPQRSTUVWXYZ123456789!@#$%&^*()[]{}.,?/\|";
 var symbolsCap = "ABCDWFGHIJKLMNOPQRSTUVWXYZ";
+var yourPass = document.getElementById("yourPassword");
+var generatePassButton = document.getElementById("passGen");
+var copyToClip = document.getElementById("copyPass");
     function generatePassword() {
         var finishedPassword = "";
         var lengthPass =  prompt("How many characters for your password? Type a number");
@@ -29,10 +32,12 @@ var symbolsCap = "ABCDWFGHIJKLMNOPQRSTUVWXYZ";
         }
     }
     function copyClip(elementId) {
-        var aux = document.createElement("input");
-        aux.setAttribute("Value",document.getElementById(elementId).innerHTML);
-        document.body.appendChild(aux);
-        aux.select();
+        var clipBoard = document.createElement('input');
+        clipBoard.setAttribute("Value",document.getElementById(elementId).innerHTML);
+        document.body.appendChild(clipBoard);
+        clipBoard.select();
         document.execCommand("copy");
-        document.body.removeChild(aux);
+        document.body.removeChild(clipBoard);
     }  
+generatePassButton.addEventListener("click",generatePassword);
+    

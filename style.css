@@ -39,7 +39,7 @@ section{
     border-width: 3px;
     border-color: black;
 }
-.passGen{
+#passGen{
     background-color: red;
     border-color:red;
     color: white;
@@ -48,7 +48,7 @@ section{
     position: relative;
     left: 180px;
 }
-.copyPass{
+#copyPass{
     background-color: green;
     border-color: green;
     color: white;
