@@ -10,9 +10,10 @@ var copyToClip = document.getElementById("copyPass");
         if (lengthPass<5){
             alert("Password must be longer than 5 characters");
             generatePassword();
-        }
-        
-        else if (lengthPass>=5 && capitalLetter===false){
+        } else if (lengthPass>45){
+            alert("Password must be less than 45 characters");
+            generatePassword();
+        } else if (lengthPass>=5 && capitalLetter===false){
             for (i=0;i<lengthPass;i++){
                 finishedPassword = finishedPassword + symbolsAll.charAt(Math.floor(Math.random() * Math.floor(symbolsAll.length - 1)));
                 console.log(finishedPassword);
